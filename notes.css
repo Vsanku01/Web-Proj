@@ -1,0 +1,60 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+/* writer */
+.typewriter h3{
+    color: white;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing{
+    from{ width: 0}
+    to{ width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent}
+    50% { border-color: orange;}
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    min-width: 240px;
+    float: left;
+    position: relative;
+    width: 18%;
+    background: #fff;
+    margin: 10px 1.5% 0 1.5%;
+    border-left: 1px solid #D4A464;
+    padding: 2%;
+    list-style-type: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space: normal;
+    transition: all 200ms ease-in-out;
+}
+
+li:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    background: #245;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #D4A464;
+}

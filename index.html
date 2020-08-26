@@ -26,7 +26,7 @@
         background-size: cover;
       }
       .center {
-        padding: 250px 0;
+        padding: 100px 0;
       }
       body {
         background-image: linear-gradient(
@@ -39,6 +39,14 @@
         margin-top: 0;
         animation-delay: 0.3s;
         color: var(--c-secondary);
+      }
+
+      .carousel-item {
+        width: 500px !important;
+        height: 500px !important;
+      }
+      .carousel {
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -54,7 +62,7 @@
             <ul class="hide-on-med-and-down right">
               <li><a href="signin.html">Login</a></li>
               <li><a href="signup.html">Register</a></li>
-              <li><a href="#">Notes</a></li>
+              <li><a href="notes.html">Notes</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -67,6 +75,24 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </header>
+
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"
+        ><img src="https://lorempixel.com/250/250/nature/1"
+      /></a>
+      <a class="carousel-item" href="#two!"
+        ><img src="https://lorempixel.com/250/250/nature/2"
+      /></a>
+      <a class="carousel-item" href="#three!"
+        ><img src="https://lorempixel.com/250/250/nature/3"
+      /></a>
+      <a class="carousel-item" href="#four!"
+        ><img src="https://lorempixel.com/250/250/nature/4"
+      /></a>
+      <a class="carousel-item" href="#five!"
+        ><img src="https://lorempixel.com/250/250/nature/5"
+      /></a>
+    </div>
 
     <div class="center">
       <h1
@@ -83,6 +109,7 @@
     <script>
       $(document).ready(function () {
         $('.sidenav').sidenav();
+        $('.carousel').carousel();
       });
     </script>
   </body>
