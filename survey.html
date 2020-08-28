@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="./css/temp.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<style>
+		.indigo > a{
+			color: white;
+
+		}
+	</style>
+</head>
+<body>
+  <nav class = 'indigo darken-3'>
+    <div class=" container nav-wrapper">
+      <a href="index.html" class="brand-logo white-text">Form</a>
+    </div>
+  </nav>
+
+  
+	  <br>
+	  <br>
+<div class="card-container ">
+<div class="form-container sign-in-container">
+	<form action="#">
+		<h3>Product Survey Form</h3>
+		<br>
+    <div class = 'row s12 l6' style="display: flex; justify-content: initial!important;">   
+        <input type="text" name="text" placeholder="First Name" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>
+        <input type="text" name="text" placeholder="Last Name" class='col s12 l5' style="margin-right: 20px !important; width: 400px !important" required>
+    </div>
+    <input type="text" name="text" placeholder="Adrress Line 1" class='col s12 l6' style="width: 550px !important;" required>
+    <input type="text" name="text" placeholder="Adrress Line 2" class='col s12 l6' style="width: 550px !important;" required>
+    <br>
+    <input type="text" name="text" placeholder="City" class='col s12 l6' style="width: 200px !important;" required>
+    <input type="text" name="text" placeholder="State/ Province" class='col s12 l6' style="width: 200px !important;" required>
+    <br>
+    <input type="text" name="text" placeholder="Postal/ Zip Code" class='col s12 l6' style="width: 200px !important;" required>
+    <select class="col s12 l6 browser-default  grey lighten-4" style="width: 200px !important;" required>
+      <option value="" disabled selected>Select your Country</option>
+      <option value="1">India</option>
+      <option value="2">America</option>
+      <option value="3">Germany</option>
+    </select>
+    <div class='row' style="display: flex; align-items: center;">
+    <h6 style="margin-right: 20px;">Contact Number</h6> 
+    <select class="browser-default grey lighten-4" style="width: 200px !important;" required>
+        <option value="" disabled selected>Area Code</option>
+        <option value="1">+91</option>
+        <option value="2">+23</option>
+        <option value="3">+56</option>
+      </select>
+    <p><h4>-</h4></p>
+    <input type="text" name="text" placeholder="Phone Number" class='col s12 l6' style="width: 200px !important;" required>
+    <br>
+    </div>
+
+    <div class="row" style="margin-right: 50px !important;">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12" style="border: 1px">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">How long have you been using this product and why?
+            </label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Write your comments and suggestions about our products in comparison with other competitors:
+            </label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Are you satisfied with our product performance? share your opinions:
+            </label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Tell us something about your shopping experiences to buy our product:
+            </label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Would you like to continue with our product? if No why:
+            </label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">What kind of changes would you like to see in our products so as to enhance your satisfaction level?
+            </label>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+
+
+    
+
+
+
+     <button class = 'waves-effect waves-dark' onclick="M.toast({html: 'Submitted',completeCallback: function(){alert('Thanks for you feedback')}})">Submit</button>
+	</form>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
